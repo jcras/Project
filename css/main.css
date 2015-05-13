@@ -1,0 +1,58 @@
+/* Main Css File for the whole site */
+
+
+/*---------------------------
+* RESPONSIVE DESIGN THINGY
+---------------------------*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+.nav>li>a {
+	padding: 5px 5px;
+}
+
+
+.nav-tabs>li>a {
+color: #FFFFFF;
+background-color: #71BCD7;
+border: 1px solid #dddddd;
+border-bottom-color: transparent;
+cursor: default;
+}
+body {
+	overflow: hidden;
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/loading.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
