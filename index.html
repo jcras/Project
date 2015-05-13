@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LED Control Project ¦ZCRAS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- preloadr-->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<!--end preloder-->
+
+<div class="container">
+  <div class="row">
+  <div class="col-xs-12"><img src="img/led.png" alt="led" style="display:block; margin:0 auto; width:320px;"></div>
+
+  <div class="col-xs-12">
+
+  	<div role="tabpanel">
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" id="tabmenu" role="tablist">
+	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+	    <li role="presentation"><a href="#converter" aria-controls="aboutme" role="tab" data-toggle="tab"> <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> Converter </a></li>
+	    <li role="presentation"><a href="#interactive" aria-controls="portfolio" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Interactive </a></li>
+	    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Contact</a></li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content" style="margin:40px 0px;">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<div class="row">
+	    		<div class="col-lg-4">
+	    				<p class="lead">Click to go to the converter: <br> <button id="gotoConverter" type="button" onclick="goConverter()"> <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></button> <br>
+										Click to go to the interactive app:<br> <button type="button" id="tointeractive"> <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></button></p>
+
+
+				</div>
+	    		<div class="col-lg-4">
+	    			<p class="lead">This is our final year project.<br><br>
+	    			This is a website to send an integer to a LED segment which is connected to a LED segment display which is connected to a Raspberry pi.	<br>
+					There is a interactive application to turn leds on or off from a web application.</p>
+
+	    		</div>
+	    		<div class="col-lg-4">
+	    			<p class="lead"> </p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="converter">
+	    	<p class="lead"> Welcome to the converter. Insert an integer.
+	    	<input type="text" name="integerInput">  <button type="button"> <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+
+			 </p>
+	    </div>
+
+	    <div role="tabpanel" class="tab-pane" id="interactive">
+			<div class="col-lg-4">
+	    		<p class="lead"> Welcome to the interactive app!<br>Click on the LEDs to the right to get started!<br>
+				</p>
+	    	</div>
+			<div class="col-lg-4">
+	    		<p class="lead"> <img id="greenOff" onclick="changeColorGreen()" src="img/greenLedOff.png" alt="GreenLEDOFF" height="42" width="42">
+								 <img src="img/yellowLedOff.png" alt="YellowLEDOFF" height="42" width="42">
+								 <img src="img/redLedOff.png" alt="redLEDOFF" height="42" width="42">
+								 <img src="img/redLedOff.png" alt="redLEDOFF" height="42" width="42">
+								 <img src="img/redLedOff.png" alt="redLEDOFF" height="42" width="42">
+								 <img src="img/redLedOff.png" alt="redLEDOFF" height="42" width="42">
+								 <img src="img/redLedOff.png" alt="redLEDOFF" height="42" width="42">
+								 <img src="img/redLedOff.png" alt="redLEDOFF" height="42" width="42"></p>
+	    	</div>
+
+
+	    </div>
+
+	    <div role="tabpanel" class="tab-pane" id="contact">
+	    	<div class="col-lg-4">
+	    		<p class="lead">Are there any issues?<br>
+
+				Please contact:
+				</p>
+	    	</div>
+
+			<div class="col-lg-4">
+	    		<p class="lead"><br>zoe @ zoecras@gmail.com<br>
+				eoin @ eoinc@email.com
+				</p>
+	    	</div>
+
+
+	    </div>
+	  </div> <!-- end of tab pane-->
+
+
+
+
+	</div>
+
+  </div>
+
+
+  </div>
+</div>
+
+<!-- Js on the bottom! -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script> --->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/preLoader.js"></script>
+
+<footer style="position:relative;">
+<div class="container" >
+	<div class="row">
+	<p class="" style="text-align:right;">Created and designed by DIT student Zoe Cras.</p>
+	</div>
+</div>
+</footer>
+</body>
+
+
+</html>
